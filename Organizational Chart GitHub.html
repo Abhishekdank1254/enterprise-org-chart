@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Organization Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        github: {
+                            dark: '#24292e',
+                            light: '#f6f8fa',
+                            border: '#e1e4e8',
+                            blue: '#0366d6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-github-light min-h-screen">
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Header -->
+        <div class="bg-github-dark p-6 rounded-t-lg shadow-lg">
+            <div class="flex items-center justify-between">
+                <h1 class="text-white text-2xl font-bold">Organization Structure</h1>
+                <button class="bg-github-blue text-white px-4 py-2 rounded hover:opacity-90 transition">
+                    Fork Template
+                </button>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="bg-white p-6 border border-github-border rounded-b-lg shadow mb-8">
+            <p class="text-gray-600">A customizable organization chart template. Fork this repository to create your own version.</p>
+        </div>
+
+        <!-- Organization Structure -->
+        <div class="grid gap-8">
+            <!-- Leadership -->
+            <div class="bg-white p-6 rounded-lg border border-github-border shadow-sm hover:shadow-md transition">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-github-blue rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold">L</span>
+                    </div>
+                    <h2 class="ml-4 text-xl font-semibold">Leadership Team</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-4 bg-github-light rounded border border-github-border">
+                        <h3 class="font-medium text-github-blue">CEO</h3>
+                        <p class="text-sm text-gray-600 mt-2">Strategic Direction & Vision</p>
+                    </div>
+                    <div class="p-4 bg-github-light rounded border border-github-border">
+                        <h3 class="font-medium text-github-blue">CTO</h3>
+                        <p class="text-sm text-gray-600 mt-2">Technical Leadership</p>
+                    </div>
+                    <div class="p-4 bg-github-light rounded border border-github-border">
+                        <h3 class="font-medium text-github-blue">COO</h3>
+                        <p class="text-sm text-gray-600 mt-2">Operations Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departments -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Engineering -->
+                <div class="bg-white p-6 rounded-lg border border-github-border shadow-sm hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-4">Engineering</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            Frontend Development
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            Backend Development
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            DevOps
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product -->
+                <div class="bg-white p-6 rounded-lg border border-github-border shadow-sm hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
+                            Product Management
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            UX Design
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                            Research
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Operations -->
+                <div class="bg-white p-6 rounded-lg border border-github-border shadow-sm hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-4">Operations</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                            HR & Recruitment
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                            Finance
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
+                            Legal
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Teams -->
+            <div class="bg-white p-6 rounded-lg border border-github-border shadow-sm hover:shadow-md transition">
+                <h3 class="text-lg font-semibold mb-4">Cross-Functional Teams</h3>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="p-3 bg-github-light rounded border border-github-border">
+                        <h4 class="font-medium text-github-blue">Platform Team</h4>
+                        <p class="text-xs text-gray-600 mt-2">Core Infrastructure</p>
+                    </div>
+                    <div class="p-3 bg-github-light rounded border border-github-border">
+                        <h4 class="font-medium text-github-blue">Mobile Team</h4>
+                        <p class="text-xs text-gray-600 mt-2">App Development</p>
+                    </div>
+                    <div class="p-3 bg-github-light rounded border border-github-border">
+                        <h4 class="font-medium text-github-blue">Security Team</h4>
+                        <p class="text-xs text-gray-600 mt-2">System Security</p>
+                    </div>
+                    <div class="p-3 bg-github-light rounded border border-github-border">
+                        <h4 class="font-medium text-github-blue">Data Team</h4>
+                        <p class="text-xs text-gray-600 mt-2">Analytics & ML</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this after the description div -->
+    <div class="bg-white p-4 border border-github-border rounded-lg shadow mb-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <button class="px-4 py-2 bg-github-light border border-github-border rounded hover:bg-gray-100" onclick="setTheme('light')">
+                    Light Theme
+                </button>
+                <button class="px-4 py-2 bg-github-light border border-github-border rounded hover:bg-gray-100" onclick="setTheme('dark')">
+                    Dark Theme
+                </button>
+            </div>
+            <a href="https://github.com/yourusername/org-chart-template" class="text-github-blue hover:underline">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

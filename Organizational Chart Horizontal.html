@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Organizational Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto overflow-x-auto">
+        <div class="flex flex-col min-w-[1200px]">
+            <!-- Title -->
+            <div class="bg-blue-600 p-4 rounded-lg shadow-lg mb-8">
+                <h1 class="text-white text-2xl font-bold text-center">Horizontal Organization Structure</h1>
+            </div>
+
+            <!-- Main Structure -->
+            <div class="flex items-center justify-center space-x-8">
+                <!-- CEO -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow-300 p-4 rounded-lg shadow w-48 text-center">
+                        <h2 class="font-bold">CEO</h2>
+                    </div>
+                    <div class="h-8 w-1 bg-gray-400 my-2"></div>
+                </div>
+
+                <!-- Departments -->
+                <div class="flex space-x-4">
+                    <div class="bg-green-200 p-4 rounded-lg shadow">
+                        <h3 class="font-semibold mb-2">Operations</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>• Production</li>
+                            <li>• Quality Control</li>
+                            <li>• Logistics</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-200 p-4 rounded-lg shadow">
+                        <h3 class="font-semibold mb-2">Finance</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>• Accounting</li>
+                            <li>• Budgeting</li>
+                            <li>• Investment</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-purple-200 p-4 rounded-lg shadow">
+                        <h3 class="font-semibold mb-2">Marketing</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>• Branding</li>
+                            <li>• Digital</li>
+                            <li>• Sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

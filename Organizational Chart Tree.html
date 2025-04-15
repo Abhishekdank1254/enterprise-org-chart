@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Organizational Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Title -->
+        <div class="bg-indigo-600 p-4 rounded-lg shadow-lg mb-12">
+            <h1 class="text-white text-2xl font-bold text-center">Tree Organization Structure</h1>
+        </div>
+
+        <!-- Tree Structure -->
+        <div class="flex flex-col items-center">
+            <!-- Level 1 -->
+            <div class="bg-yellow-400 p-4 rounded-lg shadow-lg w-64 text-center mb-8">
+                <h2 class="font-bold text-lg">Executive Director</h2>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="relative w-full flex justify-center mb-12">
+                <div class="absolute top-0 w-1/2 h-8 border-l-2 border-r-2 border-t-2 border-gray-400"></div>
+                <div class="flex justify-between w-3/4 pt-8">
+                    <div class="bg-blue-300 p-4 rounded-lg shadow w-64 text-center">
+                        <h3 class="font-semibold">Operations VP</h3>
+                    </div>
+                    <div class="bg-blue-300 p-4 rounded-lg shadow w-64 text-center">
+                        <h3 class="font-semibold">Strategy VP</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="grid grid-cols-4 gap-8 w-full">
+                <!-- Operations Branch -->
+                <div class="space-y-4">
+                    <div class="bg-green-200 p-3 rounded shadow">
+                        <h4 class="font-medium text-center mb-2">Production</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• Manufacturing</li>
+                            <li>• Assembly</li>
+                            <li>• QA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-green-200 p-3 rounded shadow">
+                        <h4 class="font-medium text-center mb-2">Logistics</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• Supply Chain</li>
+                            <li>• Distribution</li>
+                            <li>• Inventory</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Strategy Branch -->
+                <div class="space-y-4">
+                    <div class="bg-purple-200 p-3 rounded shadow">
+                        <h4 class="font-medium text-center mb-2">Marketing</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• Brand Strategy</li>
+                            <li>• Digital Marketing</li>
+                            <li>• Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-purple-200 p-3 rounded shadow">
+                        <h4 class="font-medium text-center mb-2">Innovation</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• R&D</li>
+                            <li>• Product Design</li>
+                            <li>• Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Organizational Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Center Circle -->
+        <div class="flex justify-center items-center mb-16">
+            <div class="bg-blue-500 rounded-full w-32 h-32 flex items-center justify-center shadow-lg">
+                <span class="text-white font-bold text-xl text-center">Core Leadership</span>
+            </div>
+        </div>
+
+        <!-- Outer Circles -->
+        <div class="grid grid-cols-3 gap-8">
+            <div class="transform hover:scale-105 transition-transform">
+                <div class="bg-green-200 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4 shadow">
+                    <span class="text-center font-semibold">Tech</span>
+                </div>
+                <div class="text-center text-sm">
+                    <p>Development</p>
+                    <p>Infrastructure</p>
+                </div>
+            </div>
+
+            <div class="transform hover:scale-105 transition-transform">
+                <div class="bg-yellow-200 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4 shadow">
+                    <span class="text-center font-semibold">HR</span>
+                </div>
+                <div class="text-center text-sm">
+                    <p>Recruitment</p>
+                    <p>Training</p>
+                </div>
+            </div>
+
+            <div class="transform hover:scale-105 transition-transform">
+                <div class="bg-purple-200 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4 shadow">
+                    <span class="text-center font-semibold">Finance</span>
+                </div>
+                <div class="text-center text-sm">
+                    <p>Accounting</p>
+                    <p>Planning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
