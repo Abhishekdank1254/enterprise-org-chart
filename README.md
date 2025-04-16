@@ -1,5 +1,13 @@
 # Enterprise Organization Chart Suite
 
+## 🔥 Live Preview
+Check out our live templates: [View Demo](https://Abhishekdank1254.github.io/enterprise-org-chart/)
+
+### Available Templates:
+- 🏢 Corporate Structure
+- 🏥 Healthcare Organization
+- 🎓 Education System
+
 ![Premium Banner](assets/premium-banner.png)
 
 A comprehensive, enterprise-grade organizational chart solution with advanced customization, real-time collaboration, and sector-specific templates.
